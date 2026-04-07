@@ -15,6 +15,11 @@ app.get("/sum/:a/:b", (req, res) => {
   });
 });
 
+app.get("/greeting/:name", (req, res) => {
+  const { name } = req.params;
+  res.send(`Hello, ${name || "stranger"}!`);
+});
+
 const port = 5000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
