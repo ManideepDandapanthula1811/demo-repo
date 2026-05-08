@@ -19,8 +19,13 @@ app.get("/greeting/:name", (req, res) => {
   const { name } = req.params;
   res.send(`Hello, ${name || "stranger"}!`);
 });
-
-const port = 5000;
+app.get("/sayhellow", (req, res) => {
+  res.json({
+    name: "manideep",
+    message: "Hello, welcome to the world of Express.js! ",
+  });
+});
+const port = 8998;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
