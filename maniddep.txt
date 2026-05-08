@@ -1,1 +1,2 @@
 this file will soter and have all the records of what have been changed on the code and on which folder 
+we have to mention the name who worked on which part of the code and this is very important before pushing into the main branch. This help the other developers to know who had workedn on which part of the project, please do mention the path of the code the particular developer worked and changed
